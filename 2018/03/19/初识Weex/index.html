@@ -43,8 +43,6 @@
     
     <title>
         
-            أرشيف | 
-        
         杨大澜momi
     </title>
 
@@ -215,7 +213,7 @@
     <!-- WebAPP Icons -->
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="application-name" content="杨大澜momi">
-    <meta name="msapplication-starturl" content="https://techvisionbest.github.io/dalan/dalan/archives/">
+    <meta name="msapplication-starturl" content="https://techvisionbest.github.io/dalan/dalan/2018/03/19/初识Weex/">
     <meta name="msapplication-navbutton-color" content="#0097A7">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-title" content="杨大澜momi">
@@ -230,13 +228,16 @@
     
 
     <!-- The Open Graph protocol -->
-    <meta property="og:url" content="https://techvisionbest.github.io/dalan/dalan/archives/">
+    <meta property="og:url" content="https://techvisionbest.github.io/dalan/dalan/2018/03/19/初识Weex/">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="أرشيف | 杨大澜momi">
+    <meta property="og:title" content="杨大澜momi">
     <meta property="og:image" content="/dalan/img/favicon.png">
     <meta property="og:description" content="日常&amp;学习&amp;记录&amp;陪在我身边">
     
 
+    
+        <meta property="article:published_time" content="Mon Mar 19 2018 15:25:03 GMT+0800">
+        <meta property="article:modified_time" content="Mon Mar 19 2018 16:38:58 GMT+0800">
     
 
     <!-- The Twitter Card protocol -->
@@ -244,13 +245,43 @@
 
     <!-- Add canonical link for SEO -->
     
-        <link rel="canonical" href="https://techvisionbest.github.io/dalan/dalan/archives/index.html" />
+        <link rel="canonical" href="https://techvisionbest.github.io/dalan/dalan/2018/03/19/初识Weex/index.html" />
     
 
     <!-- Structured-data for SEO -->
     
         
 
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": "https://techvisionbest.github.io/dalan/dalan/2018/03/19/初识Weex/index.html",
+    "headline": "",
+    "datePublished": "Mon Mar 19 2018 15:25:03 GMT+0800",
+    "dateModified": "Mon Mar 19 2018 16:38:58 GMT+0800",
+    "author": {
+        "@type": "Person",
+        "name": "vision",
+        "image": {
+            "@type": "ImageObject",
+            "url": "/img/avatar.png"
+        },
+        "description": "身无彩云双飞翼，心有灵犀一点通"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "杨大澜momi",
+        "logo": {
+            "@type":"ImageObject",
+            "url": "/img/favicon.png"
+        }
+    },
+    "keywords": "",
+    "description": "日常&amp;学习&amp;记录&amp;陪在我身边",
+}
+</script>
 
 
     
@@ -284,93 +315,216 @@
                         </button>
                     
 
-                    <!-- Index Module -->
-<div class="material-index mdl-grid">
-    
-    <div class="locate-thumbnail-symbol"></div>
+                    <!-- Post TOC -->
 
-    <!-- Pin on top -->
+    
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
+        </a>
+    </div>
+    -->
+
+
+    <!-- Left aligned menu below button -->
+    
+    
+    <button id="post-toc-trigger-btn"
+        class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
+
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Weex是什么？"><span class="post-toc-number">1.</span> <span class="post-toc-text">Weex是什么？</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#为什么是Weex？"><span class="post-toc-number">2.</span> <span class="post-toc-text">为什么是Weex？</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#我与Weex的爱恨情仇"><span class="post-toc-number">3.</span> <span class="post-toc-text">我与Weex的爱恨情仇</span></a></li></ol>
+    </ul>
     
 
-    <!-- Normal Post -->
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
     
         
             <!-- Random Thumbnail -->
             <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
-    
+            <script type="text/ls-javascript" id="post-thumbnail-script">
+    var randomNum = Math.floor(Math.random() * 19 + 1);
 
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/dalan/2018/03/19/初识Weex/"></a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/dalan/2018/03/19/初识Weex/" target="_self">واصل القراءة</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/dalan/img/avatar.png" width="44px" height="44px" alt="vision's avatar">
-            </div>
-            <div>
-                <strong>vision</strong>
-                <span>Mar 19, 2018</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-          
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
-
-    
-
-    
-        <script type="text/ls-javascript" id="thumbnail-script">
-    var randomNum;
-
-    var locatePost = $('.locate-thumbnail-symbol').next();
-    for(var i = 0; i < 10; i++) {
-        randomNum = Math.floor(Math.random() * 19 + 1);
-
-        locatePost.children('.post_thumbnail-random').attr('id', 'random_thumbnail-'+randomNum);
-        locatePost.children('.post_thumbnail-random').attr('data-original', '/dalan/img/random/material-' + randomNum + '.png');
+    $('.post_thumbnail-random').attr('data-original', '/dalan/img/random/material-' + randomNum + '.png');
     $('.post_thumbnail-random').addClass('lazy');
-
-        locatePost = locatePost.next();
-    }
 </script>
 
+        
+    
+            <p class="article-headline-p">
+                
+            </p>
+        </div>
+
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="/dalan/img/avatar.png" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>vision</strong>
+        <span>Mar 19, 2018</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
+
+    <!-- Qrcode -->
+    
+
+    <!-- Tags (bookmark) -->
+    
+
+    <!-- Share -->
+    
+        <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+
+    
+
+    <!-- Share Weibo -->
+    
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=&url=https://techvisionbest.github.io/dalan/dalan/2018/03/19/初识Weex/index.html&pic=https://techvisionbest.github.io/dalan/img/favicon.png&searchPic=false&style=simple" target="_blank">
+            <li class="mdl-menu__item">
+                شارك على Weibo
+            </li>
+        </a>
+    
+
+    <!-- Share Twitter -->
+    
+
+    <!-- Share Facebook -->
+    
+
+    <!-- Share Google+ -->
+    
+
+    <!-- Share LinkedIn -->
+    
+
+    <!-- Share QQ -->
+    
+        <a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=杨大澜momi&title=&summary=日常&amp;学习&amp;记录&amp;陪在我身边&pics=https://techvisionbest.github.io/dalan/img/favicon.png&url=https://techvisionbest.github.io/dalan/dalan/2018/03/19/初识Weex/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                شارك على QQ
+            </li>
+        </a>
+    
+
+    <!-- Share Telegram -->
+    
+</ul>
+
     
 </div>
+
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+    
+        <p><img src="https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1521117262556&amp;di=4175ece9c0542dfc36ee1d2c9e9b07f1&amp;imgtype=0&amp;src=http%3A%2F%2Fimg.mukewang.com%2F5a0fa3d20001a6c213000716.png" alt="Weex"></p>
+<blockquote>
+<p>众所周知传统的原生App开发发布成本高，需要通过AppStore审核，导致更新缓慢，一个App同时需要维持多个版本、多个系统（ios和Android），而且必须做兼容，大大提升了开发难度和发布周期。大多数开发心里估计都这样想过：如果能写一份代码同时运行在不同系统上就好了。别急，有Weex。</p>
+</blockquote>
+<h2 id="Weex是什么？"><a href="#Weex是什么？" class="headerlink" title="Weex是什么？"></a>Weex是什么？</h2><p>官网上是这么介绍的：</p>
+<blockquote>
+<p>Weex 是一个使用 Web 开发体验来开发高性能原生应用的框架。</p>
+</blockquote>
+<p>Weex 致力于使开发者能基于当代先进的 Web 开发技术，使用同一套代码来构建 Android、iOS 和 Web 应用。具体来讲，在集成了WeexSDK之后，你可以使用JavaScript和现代流行的前端框架来开发移动应用。</p>
+<p>想要清楚Weex是什么，就必须了解<a href="http://naotu.baidu.com/file/6af15fcbb72f89926043779811b1ea44?token=df0378691ecdcef2" target="_blank" rel="noopener">App常用的开发模式</a></p>
+<p>简单来说，Weex就是一个可以使用Web语法编写移动App的框架，并且编写出来的App是横跨Web、Android和ios三个平台的，就像其官网上所说的：「Write Once, Run Everywhere」。</p>
+<h2 id="为什么是Weex？"><a href="#为什么是Weex？" class="headerlink" title="为什么是Weex？"></a>为什么是Weex？</h2><p>自打16年阿里手淘团队开源Weex以来，Weex就免不了和FaceBook开源的React-Native一决高下的命运。React-Native宣称「Learn Once, Write Anywhere」，而 Weex 宣称「Write Once, Run Everywhere」。虽然两个框架效果相似，但是在我看来，两者还是有很多不同的。</p>
+<ul>
+<li>Weex支持三端（Web、Android、ios）而RN更纯粹的支持移动端（Android和ios）</li>
+<li>Weex的目标是实现代码共用，三端使用一套代码，而RN更注重独立性，其代码需要针对ios和Android平台编写，代码无法完全共用</li>
+<li>Weex使用开源的Vue.js，使得其对于前端人员来说，可以直接上手使用，而RN使用React模板，采用JSX语法，学习曲线较Weex陡峭许多</li>
+<li>Weex给我的感觉更倾向于在已有的项目中嵌入Weex页面，所以官网在介绍完Weex是什么后，就直奔 集成Weex到已有应用 上去了，而RN则更倾向于开发整个App<br><img src="https://pic4.zhimg.com/80/v2-229835210cf8cd8606239e237599cb6f_hd.jpg" alt="集成weex到已有应用"><h2 id="我与Weex的爱恨情仇"><a href="#我与Weex的爱恨情仇" class="headerlink" title="我与Weex的爱恨情仇"></a>我与Weex的爱恨情仇</h2><blockquote>
+<p>这是一个有故事的文章，来自一个初学Weex的小菜鸡</p>
+</blockquote>
+</li>
+</ul>
+<p><img src="https://pic1.zhimg.com/80/v2-97a5d4c66677086ed7881f61d5ff16ff_hd.jpg" alt="闭嘴，别瞎说，我们两个很相爱"></p>
+<blockquote>
+<p>weex是阿里巴巴开发团队在RN的成功案例上，重新设计出的一套开发模式，站在了巨人肩膀上并有淘宝团队项目做养料，广受关注，2016年4月正式开源，并在v2.0版本官方支持Vue.js，与RN分庭抗礼。</p>
+</blockquote>
+<p>虽然Weex背景深厚，但架不住开源时间短，社区活跃程度低，导致到处都是坑，并且这些坑往往踩了就很难出来。</p>
+<p><img src="https://pic4.zhimg.com/80/v2-2d446d2d04ee8e5eb4b5d6ddb100ae28_hd.jpg" alt="催人泪下的孙子时光"></p>
+
+        
+    
+
+    
+</div>
+
+
+                
+
+                <!-- Post Comments -->
+                
+                    
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+</nav>
+
+        </div>
+    </div>
+
 
 
                     
